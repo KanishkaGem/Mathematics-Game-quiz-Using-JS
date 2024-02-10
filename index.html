@@ -1,0 +1,56 @@
+<!-- We wan to design a mathematics game in which we put the maths questionaire.
+1. There will be 4 options for each question and we have to select only one answer 
+2. button for starting and reset the game will be there
+3. A backward 1 minute timer will be there
+4. Score board that will increase with every one correct answer
+5. if you give a wrong answer then try again message will pop up
+5. and ofcourse a very beautiful interface for attracting the users has to be there -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="score">
+            Score:<span id="scoreValue">0</span>
+        </div>
+        <div id="correct">
+            Correct
+        </div>
+        <div id="wrong">
+            Try Again
+        </div>
+
+        <div id="question">
+            <!-- <span id="numberOne"></span> <span id="numberTwo"></span> -->
+        </div>
+        <div id="instruction">
+            Click on the correct answer
+        </div>
+
+        <div id="choices">
+            <div id="box1" class="box"> Option 1</div>
+            <div id="box2" class="box">Option 2 </div>
+            <div id="box3" class="box">Option 3 </div>
+            <div id="box4" class="box">Option 4 </div>
+        </div>
+        <div id="startreset">
+            Start game
+        </div>
+        <div id="timeremaining">
+            Time Remaining : <span id="timeRemainingValue" >60</span>sec
+        </div>
+        <div id="gameover">
+         <!-- <p>Game Over</p>
+         <p>Your score is: <span id="finalscore"> </span></p> -->
+        </div>
+    </div>
+
+<script src="javascript.js">
+</script>
+</body>
+</html>

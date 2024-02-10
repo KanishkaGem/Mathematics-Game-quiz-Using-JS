@@ -1,0 +1,149 @@
+html{
+    background:radial-gradient(circle, grey,white);
+}
+
+#container{
+    width: 500px;
+    height:400px;
+    background-color:rgb(0, 217, 255);
+    margin:70px auto;
+    padding:10px;
+    border-radius:10px;
+    box-shadow:0px 4px 4px 0px blue;
+    position:relative;  /*We gave relative position so that other elements will have absolute value according to this container
+    Otherwise the absolute elements will be positioned according to the body element*/
+}
+
+#score{
+    background-color: rgb(244, 231, 96);
+    color:rgb(223, 9, 9);
+    padding:8px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position:absolute;
+    left:420px;
+    border-radius:5px;
+    box-shadow:0px 4px 4px rgb(187, 187, 21);
+}
+
+#correct{
+    position: absolute;
+    left:210px;
+    background-color: green;
+    color:white;
+    padding:20px;
+    display:none;
+}
+
+#wrong{
+    position:absolute;
+    left:200px;
+    background-color: red;
+    padding:10px;
+    display:none;
+}
+
+#question{
+    width:350px;
+    height:150px;
+    background-color:rgb(194, 82, 194);
+    margin:50px auto 10px auto;  
+    box-shadow:0px 4px 4px purple;
+    font-size:90px;
+    text-align:center;
+    font-family:cursive, sans-serif;
+    color:black;
+    border-radius:10px;
+}
+
+#instruction{
+    width:450px;
+    height:50px;
+    text-align:center;
+    background-color: pink;
+    margin:10px auto;
+    box-shadow:0px 4px 4px purple;
+}
+
+#choices{
+    margin:5px auto;
+    height:80px;
+    width:500px;
+}
+
+.box{
+    background-color:white;
+    border:1px solid black; 
+    float:left;
+    height:80px;
+    width:100px;
+    /* margin-right:0px; */
+    margin-left:18px;
+    box-shadow:0px 4px 4px black;
+    transition:all 0.2s;
+    text-align:center;
+    font-family:  'Trebuchet MS', sans-serif;
+    font-size:large;
+}
+
+.box:hover{
+    background-color:purple;
+    color:white;
+}
+.box:active{
+    box-shadow:0px 0px;
+}
+
+#startreset{
+    background-color:white;
+    padding:8px;
+    margin-top:10px;
+    position:absolute;
+    left:200px;
+    box-shadow:0px 4px 4px black;
+    transition:all 0.2s;
+}
+
+#startreset:hover{
+    color:white;
+    background-color:purple;
+}
+#startreset:active{
+    box-shadow:0px 0px;
+}
+
+#timeremaining{
+    background-color: rgb(181,235,36,0.78);
+    width:170px;
+    position:absolute;
+    top:380px;
+    left:320px;
+    padding:5px;
+    border-radius:5px;
+    box-shadow:0px 4px 4px black;
+    /* visibility:hidden;    this means the element is still there and it will interact with other elements also*/
+    display:none;   /*This means the element will not interact with other items and still present there*/
+}
+
+#gameover{
+    background:linear-gradient(rgb(211, 244, 23),rgb(255, 94, 0));
+    color:white;
+    font-size:x-large;
+    height:150px;
+    width:300px;
+    position: absolute;
+    bottom:135px;
+    left:110px;
+    text-align:center;
+    text-transform:uppercase;
+    box-shadow:0px 4px 4px black;
+    z-index:2;
+    display:none;
+    border-radius:10px;
+    font-family:  Verdana, sans-serif;
+}
+#scoreValue{
+    color:brown;
+    font-family: sans-serif;
+    font-weight:bold;
+}
